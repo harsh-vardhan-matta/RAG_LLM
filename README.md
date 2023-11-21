@@ -10,6 +10,7 @@ Steps Followed:
 - weather_1.csv: Offers temperature, rainfall, duration, and geography data
 
 **RAG Implementation with LLM:**
+- Reference Figure: rag_flow.jpeg 
 - Data Preparation: Prepare and preprocess data as necessary (filling missing values, drop features etc).
 - data_generator_1.ipynb for detailed data exploration.
   
