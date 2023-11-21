@@ -15,29 +15,30 @@ Synthetic Data Generation:
 Data Exploration:
 
 Refer to data_generator_1.ipynb for detailed data exploration.
+
 RAG Implementation with LLM:
 
-Data Preparation:
+- Data Preparation:
 
 Prepare and preprocess data as necessary.
 Embedding Development:
 
-Create embeddings for data representation.
-Pinecone Integration:
+- Create embeddings for data representation.
+- Pinecone Integration:
 
 Connect embeddings to Pinecone for efficient retrieval.
-Prompt Engineering:
+- Prompt Engineering:
 
 Experiment with various prompt types: zero-shot, few-shot, chain-of-thoughts, and self-consistency.
 Refer to Prompt_Engineering.docx for detailed prompt engineering guidelines.
 Context Retrieval:
 
-Input a query and retrieve relevant contexts based on similarity search.
+- Input a query and retrieve relevant contexts based on similarity search.
 Select contexts with lower scores for higher relevance.
-LLM-based Response Generation:
+- LLM-based Response Generation:
 
-Provide the retrieved context along with the query to the LLM to generate a response.
-Hallucination Detection and Reward Function Implementation:
+- Provide the retrieved context along with the query to the LLM to generate a response.
+- Hallucination Detection and Reward Function Implementation:
 
 Identify and address hallucinations in LLM responses.
 Implement reward functions to train a reinforcement learning model.
@@ -53,14 +54,14 @@ This repository showcases the implementation of Retrieval Augmented Generation (
 
 Key Features:
 
-Data Synthesis: Generate synthetic data for model training and experimentation.
+- Data Synthesis: Generate synthetic data for model training and experimentation.
 
-Embedding Creation: Develop embeddings for efficient data representation.
+- Embedding Creation: Develop embeddings for efficient data representation.
 
-Pinecone Integration: Utilize Pinecone for scalable and efficient context retrieval.
+- Pinecone Integration: Utilize Pinecone for scalable and efficient context retrieval.
 
-Prompt Engineering: Explore various prompt types to optimize LLM performance.
+- Prompt Engineering: Explore various prompt types to optimize LLM performance.
 
-Hallucination Detection: Implement mechanisms to identify and address hallucinations.
+- Hallucination Detection: Implement mechanisms to identify and address hallucinations.
 
-Reward Function Implementation: Train a reinforcement learning model to improve response quality.
+- Reward Function Implementation: Train a reinforcement learning model to improve response quality.
