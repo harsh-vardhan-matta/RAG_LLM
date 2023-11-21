@@ -49,8 +49,7 @@ rag-chatbot_1.ipynb: Implements the RAG chatbot framework.
 
 tackling_hallucination.ipynb: Addresses hallucination detection and reward function implementation.
 
-GitHub Readme Description:
-This repository showcases the implementation of Retrieval Augmented Generation (RAG) with large language models (LLMs) to enhance the performance and accuracy of LLM responses. The provided code demonstrates the steps involved in RAG implementation, including data preparation, embedding development, Pinecone integration, prompt engineering, context retrieval, LLM-based response generation, hallucination detection, and reward function implementation.
+
 
 Key Features:
 
