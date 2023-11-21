@@ -11,8 +11,8 @@ Steps Followed:
 
 **RAG Implementation with LLM:**
 - Reference Figure: rag_flow.jpeg
-- Regference Python File - data_generator_1.ipynb
-- Reference Python File for further implementation: rag-chatbot_1.ipynb
+- Regference Python File to create synthetic data - data_generator_1.ipynb
+- Reference Python File for RAG implementation: rag-chatbot_1.ipynb
 - Data Preparation: Prepare and preprocess data as necessary (filling missing values, drop features etc).
   
 **Embedding Development followed by initialization of OpenAI and PineCone APIs**
