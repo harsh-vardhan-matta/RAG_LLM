@@ -1,26 +1,65 @@
-# RAG_LLM
-An overview of Retrieval Augmented Generation (RAG) with LLM
+RAG_LLM
+This repository provides an overview of Retrieval Augmented Generation (RAG) with large language models (LLMs). RAG is an AI framework that enhances the performance of LLMs by incorporating information from external knowledge sources.
 
 Steps Followed:
-1. Develop synthetic data:
-   1.1 macro_1.csv (state_gdp($_million_(USD)),population,pcc_category)
-   1.2 media_1.csv (spend($),platform,days,geography)
-   1.3 business_performance_1.csv (value_sales,volume_sales,business_entity,geography)
-   1.4 weather_1.csv (temperature (Celsius),rainfall (mm),days,geography)
 
-Play around with this data - refer to file name: data_generator_1.ipynb
+Data Development:
 
-2. Steps to implement rag solution with LLM:
-   2.1 Data Creation followed by data preprocessing (if needed)
-   2.2 Develop Embeddings
-   2.3 Connect the Embeddings through Pinecone
-   2.4. Experiments with Prompts (Experimentation - Zero Shot, Few Shot, Chain-of-Thoughts, Self Consistency)
-     2.4.1. Please refer to the file_name = Prompt_Engineering.docx
-   2.5 Give a query, based on similarity search (define k by yourself) - you will get the relevant contexts (from the embeddings created) - along with the scores - choose the lower scores
-   2.6 Give {Prompt = query + context} to LLM to receive response
-   2.7 Check for hallucination. Implement Reward functions. Give -1 for wrong rewards, + 1 for right rewards. Train the reinforcement learning model.
+Synthetic Data Generation:
 
-3. Refer code files
-   3.1 rag-chatbot_1.ipynb
-   3.2 tackling_hallucination.ipynb
+macro_1.csv: Contains state-level GDP, population, and PCC category data.
+media_1.csv: Provides information on media spending, platform, duration, and geography.
+business_performance_1.csv: Includes data on value and volume sales, business entity, and geography.
+weather_1.csv: Offers temperature, rainfall, duration, and geography data.
+Data Exploration:
 
+Refer to data_generator_1.ipynb for detailed data exploration.
+RAG Implementation with LLM:
+
+Data Preparation:
+
+Prepare and preprocess data as necessary.
+Embedding Development:
+
+Create embeddings for data representation.
+Pinecone Integration:
+
+Connect embeddings to Pinecone for efficient retrieval.
+Prompt Engineering:
+
+Experiment with various prompt types: zero-shot, few-shot, chain-of-thoughts, and self-consistency.
+Refer to Prompt_Engineering.docx for detailed prompt engineering guidelines.
+Context Retrieval:
+
+Input a query and retrieve relevant contexts based on similarity search.
+Select contexts with lower scores for higher relevance.
+LLM-based Response Generation:
+
+Provide the retrieved context along with the query to the LLM to generate a response.
+Hallucination Detection and Reward Function Implementation:
+
+Identify and address hallucinations in LLM responses.
+Implement reward functions to train a reinforcement learning model.
+Assign -1 for incorrect rewards and +1 for correct rewards.
+Code Files:
+
+rag-chatbot_1.ipynb: Implements the RAG chatbot framework.
+
+tackling_hallucination.ipynb: Addresses hallucination detection and reward function implementation.
+
+GitHub Readme Description:
+This repository showcases the implementation of Retrieval Augmented Generation (RAG) with large language models (LLMs) to enhance the performance and accuracy of LLM responses. The provided code demonstrates the steps involved in RAG implementation, including data preparation, embedding development, Pinecone integration, prompt engineering, context retrieval, LLM-based response generation, hallucination detection, and reward function implementation.
+
+Key Features:
+
+Data Synthesis: Generate synthetic data for model training and experimentation.
+
+Embedding Creation: Develop embeddings for efficient data representation.
+
+Pinecone Integration: Utilize Pinecone for scalable and efficient context retrieval.
+
+Prompt Engineering: Explore various prompt types to optimize LLM performance.
+
+Hallucination Detection: Implement mechanisms to identify and address hallucinations.
+
+Reward Function Implementation: Train a reinforcement learning model to improve response quality.
