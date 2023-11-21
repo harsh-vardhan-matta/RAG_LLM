@@ -14,7 +14,7 @@ Synthetic Data Generation:
 
 Data Exploration:
 
-Refer to data_generator_1.ipynb for detailed data exploration.
+- Refer to data_generator_1.ipynb for detailed data exploration.
 
 RAG Implementation with LLM:
 
