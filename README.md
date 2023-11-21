@@ -10,9 +10,10 @@ Steps Followed:
 - weather_1.csv: Offers temperature, rainfall, duration, and geography data
 
 **RAG Implementation with LLM:**
-- Reference Figure: rag_flow.jpeg 
+- Reference Figure: rag_flow.jpeg
+- Regference Python File - data_generator_1.ipynb
+- Reference Python File for further implementation: rag-chatbot_1.ipynb
 - Data Preparation: Prepare and preprocess data as necessary (filling missing values, drop features etc).
-- data_generator_1.ipynb for detailed data exploration.
   
 **Embedding Development followed by initialization of OpenAI and PineCone APIs**
 - Create embeddings for data representation (model="text-embedding-ada-002").
@@ -32,6 +33,7 @@ Steps Followed:
 - Provide the retrieved context along with the query to the LLM to generate a response.
 
 **Hallucination Detection and Reward Function Implementation:**
+- Reference Python File: tackling_hallucination.ipynb
 - Identify and address hallucinations in LLM responses.
 - Implement reward functions to train a reinforcement learning model.
 - Assign -1 for incorrect rewards and +1 for correct rewards.
