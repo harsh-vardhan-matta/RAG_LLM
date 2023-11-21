@@ -7,10 +7,11 @@ Data Development:
 
 Synthetic Data Generation:
 
-macro_1.csv: Contains state-level GDP, population, and PCC category data.
-media_1.csv: Provides information on media spending, platform, duration, and geography.
-business_performance_1.csv: Includes data on value and volume sales, business entity, and geography.
-weather_1.csv: Offers temperature, rainfall, duration, and geography data.
+- macro_1.csv: Contains state-level GDP, population, and PCC category data.
+- media_1.csv: Provides information on media spending, platform, duration, and geography.
+- business_performance_1.csv: Includes data on value and volume sales, business entity, and geography.
+- weather_1.csv: Offers temperature, rainfall, duration, and geography data.
+
 Data Exploration:
 
 Refer to data_generator_1.ipynb for detailed data exploration.
