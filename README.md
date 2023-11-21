@@ -4,27 +4,27 @@ This repository provides an overview of Retrieval Augmented Generation (RAG) wit
 Steps Followed:
 
 **Synthetic Data Generation:**
-- macro_1.csv: Contains state-level GDP, population, and PCC category data.
-- media_1.csv: Provides information on media spending, platform, duration, and geography.
-- business_performance_1.csv: Includes data on value and volume sales, business entity, and geography.
-- weather_1.csv: Offers temperature, rainfall, duration, and geography data.
+- macro_1.csv: Contains state-level GDP, population, and PCC features.
+- media_1.csv: Provides information on media spending, platform, duration, and geography
+- business_performance_1.csv: Includes data on value and volume sales, business entity, and geography
+- weather_1.csv: Offers temperature, rainfall, duration, and geography data
 
 **RAG Implementation with LLM:**
-- Data Preparation: Prepare and preprocess data as necessary.
+- Data Preparation: Prepare and preprocess data as necessary (filling missing values, drop features etc).
 - data_generator_1.ipynb for detailed data exploration.
   
 **Embedding Development followed by initialization of OpenAI and PineCone APIs**
-- Create embeddings for data representation.
-- Pinecone Integration (index_name = llama-2-rag):
+- Create embeddings for data representation (model="text-embedding-ada-002").
+- Pinecone Integration (index_name = llama-2-rag). Visit Pinecone website to play around with database. 
 - OpenAI API - (Give your own key)
 - Connect embeddings to Pinecone for efficient retrieval.
 
 **Prompt Engineering:**
 - Experiment with various prompt types: zero-shot, few-shot, chain-of-thoughts, and self-consistency.
-- Refer to Prompt_Engineering.docx for detailed prompt engineering guidelines.
+- Refer to Prompt_Engineering.docx for detailed prompt engineering examples
 
 **Context Retrieval:**
-- Input a query and retrieve relevant contexts based on similarity search.
+- Input a query (implement prompt engineering) and retrieve relevant contexts based on similarity search.
 - Select contexts with lower scores for higher relevance.
 
 **LLM-based Response Generation:**
