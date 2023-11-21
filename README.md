@@ -2,6 +2,7 @@ RAG_LLM
 This repository provides an overview of Retrieval Augmented Generation (RAG) with large language models (LLMs). RAG is an AI framework that enhances the performance of LLMs by incorporating information from external knowledge sources.
 
 Steps Followed:
+
 **Synthetic Data Generation:**
 - macro_1.csv: Contains state-level GDP, population, and PCC category data.
 - media_1.csv: Provides information on media spending, platform, duration, and geography.
